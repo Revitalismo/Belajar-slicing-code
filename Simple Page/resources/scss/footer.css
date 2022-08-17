@@ -1,0 +1,97 @@
+@import url(./header.scss);
+.footer-grid {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: #6C2929;
+  color: var(--pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.footer-grid .logo h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: var(--l-fs-m);
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer-grid .logo h3 {
+  width: 16ch;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--xs-fs-m);
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer-grid .copyright {
+  height: 80px;
+  width: 100%;
+  max-width: 300px;
+}
+.footer-grid .copyright .copyright-icons {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-grid .copyright .copyright-icons li {
+  list-style: none;
+  text-decoration: none;
+}
+.footer-grid .copyright .copyright-icons li img {
+  height: 30px;
+  aspect-ratio: 1/1;
+}
+.footer-grid .copyright .copyright-icons li:first-child img {
+  height: 25px;
+  aspect-ratio: 1/1;
+}
+.footer-grid .copyright h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--s-fs-m);
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--pink);
+}
+
+.footer-grid .links-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  color: var(--pink);
+  row-gap: 1rem;
+}
+.footer-grid .footer-link li {
+  list-style: none;
+  text-decoration: none;
+}
+.footer-grid .footer-link h4 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(-s-fs-m);
+  text-transform: uppercase;
+}
+.footer-grid .footer-link a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--xs-fs-m);
+  text-transform: lowercase;
+  text-decoration: none;
+  color: var(--pink);
+}
+.footer-grid .footer-link li:hover a {
+  -webkit-text-decoration-color: var(--pink);
+          text-decoration-color: var(--pink);
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}/*# sourceMappingURL=footer.css.map */

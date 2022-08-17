@@ -1,0 +1,80 @@
+:root {
+  --xs-fs-m: 0.75rem;
+  --s-fs-m: 0.875rem;
+  --m-fs-m: 1rem;
+  --l-fs-m: 1.125rem;
+  --xl-fs-m: 1.5rem;
+  --grey: #393939;
+  --white: #E0E0E0;
+  --pink: #DBDBDB;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  background: linear-gradient(180deg, #FFF8F8 0%, rgba(255, 227, 227, 0.75) 25%, #FFCECE 100%);
+  display: grid;
+  justify-items: center;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background: #FAFAFA;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header .header-logo {
+  padding: 1rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--xl-fs-m);
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--grey);
+  justify-self: start;
+}
+header img {
+  max-width: 57px;
+  max-height: 51px;
+  justify-self: end;
+}
+header .header-link-list {
+  height: 50px;
+  padding: 0.5rem;
+  visibility: hidden;
+}
+header .header-link-list li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--grey);
+  font-family: "Nunito";
+  font-size: 1rem;
+}
+header .header-link-list li a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--grey);
+}
+
+.header-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}/*# sourceMappingURL=header.css.map */

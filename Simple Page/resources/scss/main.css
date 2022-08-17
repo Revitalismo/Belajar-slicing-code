@@ -1,0 +1,286 @@
+:root {
+  --xs-fs-m: 0.75rem;
+  --s-fs-m: 0.875rem;
+  --m-fs-m: 1rem;
+  --l-fs-m: 1.125rem;
+  --xl-fs-m: 1.5rem;
+  --grey: #393939;
+  --white: #E0E0E0;
+  --pink: #DBDBDB;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  background: linear-gradient(180deg, #FFF8F8 0%, rgba(255, 227, 227, 0.75) 25%, #FFCECE 100%);
+  display: grid;
+  justify-items: center;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background: #FAFAFA;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header .header-logo {
+  padding: 1rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--xl-fs-m);
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--grey);
+  justify-self: start;
+}
+header img {
+  max-width: 57px;
+  max-height: 51px;
+  justify-self: end;
+}
+header .header-link-list {
+  height: 50px;
+  padding: 0.5rem;
+  visibility: hidden;
+}
+header .header-link-list li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--grey);
+  font-family: "Nunito";
+  font-size: 1rem;
+}
+
+.header-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main {
+  width: 100%;
+  max-width: 100ch;
+  padding-top: 60px;
+  background: linear-gradient(180deg, #FFF8F8 0%, rgba(255, 227, 227, 0.75) 25%, #FFCECE 100%);
+}
+main .main-heading {
+  max-width: 370px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--xl-fs-m);
+  color: var(--grey);
+}
+main .main-content-1 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+main .main-content-1 .content-1-img {
+  height: 100vh;
+  max-height: 320px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background: var(--grey) url(https://unsplash.com/photos/sBbm92cRIQo/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mjd8fGNvaW58ZW58MHx8fHwxNjYwMDA5Nzkz&force=true&w=640) center no-repeat;
+  background-size: cover;
+}
+main .article-1-grid {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+main .article-1-grid .article-1-heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--l-fs-m);
+  text-transform: capitalize;
+  color: var(--grey);
+}
+main .article-1-grid .article-1-summary {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--m-fs-m);
+  text-transform: lowercase;
+}
+main .article-1-grid .article-1-img {
+  height: 100vh;
+  max-height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--grey) url(https://unsplash.com/photos/XJXWbfSo2f0/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYwMDI0OTYz&force=true&w=640) center no-repeat;
+}
+main .main-content-2 {
+  margin-top: 50px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main .main-content-2 .content-2-cards {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-auto-rows: 300px;
+}
+main .main-content-2 .content-2-cards .content-2-card {
+  width: 100%;
+  max-width: 280px;
+  display: grid;
+  grid-template-rows: 75% repeat(2, 1fr);
+  background: #B04747;
+  box-shadow: 0px 0px 15px -10px rgba(58, 58, 58, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .main-content-2 .content-2-cards .content-2-card .card-heading {
+  padding: 0.25rem 1rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--l-fs-m);
+  text-transform: capitalize;
+  color: var(--white);
+}
+main .main-content-2 .content-2-cards .content-2-card .card-description {
+  margin-top: -10px;
+  padding: 0.25rem 1rem;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--s-fs-m);
+  text-transform: capitalize;
+  color: var(--white);
+}
+main .main-content-2 .content-2-cards .card-img {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--grey);
+}
+main .main-content-2 .content-2-cards .card-img-1 {
+  background-image: url(https://unsplash.com/photos/Im7lZjxeLhg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYwMDMyNjc0&force=true&w=640);
+}
+main .main-content-2 .content-2-cards .card-img-2 {
+  background-image: url(https://unsplash.com/photos/wqLGlhjr6Og/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYwNjY1MzYx&force=true&w=640);
+}
+main .main-content-2 .content-2-cards .card-img-3 {
+  background-image: url(https://unsplash.com/photos/NmN_C6VIqus/download?ixid=MnwxMjA3fDB8MXx0b3BpY3x8NnNNVmpUTFNrZVF8fHx8fDJ8fDE2NjA2NjM4OTY&force=true&w=640);
+}
+main .content-heading {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--xl-fs-m);
+  text-transform: uppercase;
+  color: var(--grey);
+}
+main .main-content-3 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 25px;
+}
+main .reviews-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+}
+main .reviews-grid .review-card {
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(194, 102, 102, 0.69) 0%, rgba(176, 65, 65, 0.84) 58.33%, #9B3535 100%);
+  border-radius: 5px;
+  display: grid;
+  grid-template-areas: "profile name-title" "profile-comment profile-comment";
+  grid-template-rows: 55px;
+  grid-template-columns: 60px;
+}
+main .reviews-grid .review-card .profile-cards {
+  grid-area: profile;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: var(--grey);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .reviews-grid .review-card .name-title {
+  grid-area: name-title;
+  display: flex;
+  flex-direction: column;
+}
+main .reviews-grid .review-card .name-title .name-profile {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--l-fs-m);
+  text-transform: capitalize;
+  color: var(--white);
+}
+main .reviews-grid .review-card .name-title .title-profile {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--s-fs-m);
+  text-transform: capitalize;
+  color: var(--white);
+}
+main .reviews-grid .review-card .profile-comment {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--l-fs-m);
+  text-transform: capitalize;
+  color: var(--white);
+  grid-area: profile-comment;
+}
+main .reviews-grid .review-card .profile-card-1 {
+  background-image: url(https://unsplash.com/photos/RiDxDgHg7pw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTJ8fHBvdHJhaXR8ZW58MHx8fHwxNjYwNjI2NDkz&force=true&w=640);
+}
+main .reviews-grid .review-card .profile-card-2 {
+  background-image: url(https://unsplash.com/photos/cNl1iXCM-Rk/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYwNjY4Nzg4&force=true&w=640);
+}
+
+@media (min-width: 720px) {
+  header .header-hamburger-icon {
+    display: none;
+  }
+  header .header-link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    visibility: visible;
+  }
+}/*# sourceMappingURL=main.css.map */
