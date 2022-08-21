@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "PlusJakartaSans-Regular";
+  src: url(./../PlusJakartaSans/PlusJakartaSans-Regular.woff);
+}
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: url(./../PlusJakartaSans/PlusJakartaSans-Medium.woff);
+}
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: url(./../PlusJakartaSans/PlusJakartaSans-ExtraBold.woff);
+}
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBoldItalic";
+  src: url(./../PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.woff);
+}
+@font-face {
+  font-family: "PlusJakartaSans-MediumItalic";
+  src: url(./../PlusJakartaSans/PlusJakartaSans-MediumItalic.woff);
+}
+li {
+  list-style: none;
+}
+
+main {
+  justify-self: center;
+  width: 90%;
+}
+
+.main-slider {
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  padding: 1rem;
+  position: relative;
+  display: grid;
+}
+
+.slider .btn-slider {
+  height: 30px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+.slider .btn-slider img {
+  width: 100%;
+}
+.slider .btn-slider-right {
+  top: 50%;
+  right: 14%;
+}
+.slider .btn-slider-left {
+  top: 50%;
+  left: 14%;
+}
+.slider .products {
+  padding: 1.25rem;
+  justify-self: center;
+  height: 360px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  overflow: hidden;
+}
+.slider .products div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider .products div span {
+  height: 50px;
+  display: flex;
+  gap: 5px;
+}
+.slider .products div span img {
+  height: 15px;
+  box-shadow: none;
+}
+.slider .products div span h1 {
+  font-family: "PlusJakartaSans-ExtraBold";
+  font-style: normal;
+  font-size: 24px;
+  color: #24272B;
+}
+.slider .products div img {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -10px #454545;
+}
+.slider .products div:nth-child(1) span {
+  height: 45px;
+}
+.slider .products div:nth-child(4) span {
+  height: 40px;
+}
+
+.products-article {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.products-article .product-article {
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.products-article .product-article h1 {
+  width: 15ch;
+  font-family: "PlusJakartaSans-ExtraBold";
+  font-style: normal;
+  font-size: 28px;
+  color: #24272B;
+}
+.products-article .product-article img {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 0px #EFFB56;
+}
+.products-article .product-article:nth-child(2) h1 {
+  order: 1;
+  width: 30ch;
+  font-family: "PlusJakartaSans-Regular";
+  font-style: normal;
+  font-size: 16px;
+  color: #24272B;
+}
+
+.product-photo {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.product-photo h1 {
+  font-family: "PlusJakartaSans-ExtraBold";
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #24272B;
+}
+.product-photo img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

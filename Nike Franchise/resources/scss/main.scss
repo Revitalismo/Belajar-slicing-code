@@ -1,0 +1,165 @@
+@use './variable' as *;
+
+main {
+    justify-self: center;
+    width: 90%;
+
+}
+
+.main-slider {
+    display: grid;
+    place-items: center;
+}
+
+// products slider
+.slider {
+    padding: 1rem;
+
+    position: relative;
+
+    display: grid;
+}
+
+// slider buttons
+.slider {
+    .btn-slider {
+        height: 30px;
+        aspect-ratio: 1/1;
+
+        position: absolute;
+        display: grid;
+        place-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .btn-slider-right { top: 50%; right: 14%; }
+    .btn-slider-left { top: 50%; left: 14%; }
+
+    // products
+    .products {
+        padding: 1.25rem;
+
+        justify-self: center;
+        height: 360px;
+        width: 600px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        overflow: hidden;
+
+        div {
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                height: 50px;
+                display: flex;
+                gap: 5px;
+
+                img { height: 15px; box-shadow: none;}
+                
+                h1 {
+                    font-family: 'PlusJakartaSans-ExtraBold';
+                    font-style: normal;
+                    font-size: $extra-large-font;
+                    color: $primary-black;
+                }
+            }
+
+            img {
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px -10px #454545;
+            }
+        }
+
+        // menyeleksi produk 1 & 4
+        div:nth-child(1) span {
+            height: 45px;
+        }
+
+        div:nth-child(4) span {
+            height: 40px;
+        }
+
+    }
+}
+
+// products article
+.products-article {
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+// product article h1 img
+.products-article {
+    .product-article {
+        width: 100%;
+        padding: 1.25rem;
+
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            width: 15ch;
+
+            font-family: 'PlusJakartaSans-ExtraBold';
+            font-style: normal;
+            font-size: $xx-large-font;
+
+            color: $primary-black;
+        }
+
+        img {
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 25px 0px $primary-yellow;
+        }
+    }
+
+    .product-article:nth-child(2) h1 {
+        order: 1;
+
+        width: 30ch;
+
+        font-family: 'PlusJakartaSans-Regular';
+        font-style: normal;
+        font-size: $small-font;
+
+        color: $primary-black;
+    }
+}
+
+// photo
+.product-photo {
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+
+    h1 {
+        font-family: 'PlusJakartaSans-ExtraBold';
+        font-style: normal;
+        font-size: $xxx-large-font;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $primary-black;
+    }
+
+    img {
+        width: 100%;
+    }
+}

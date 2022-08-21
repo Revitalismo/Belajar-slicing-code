@@ -1,0 +1,217 @@
+@use './variable' as *;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    background-color: $secondary-white;
+
+    display: grid;
+}
+
+header {
+    justify-self: center;
+    height: 470px;
+    width: 90%;
+
+    background-color: #020202;
+    border-radius: 0 0 16px 16px;
+
+    position: relative;
+}
+
+.header-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+// header hero background 
+.header-hero-background {
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+// circle and triangle
+.header-effect {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+    position: absolute;
+    bottom: 0;
+    
+    .circle-effect {
+        width: 250px;
+        aspect-ratio: 1/1;
+    }
+}
+
+// navigation link
+.hero-navigation-link {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2.5fr 1fr;
+    height: 80px;
+
+    .navigation-link {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        justify-self: start;
+
+        // font styling
+        a {
+            font-family: 'PlusJakartaSans-Regular';
+            font-style: normal;
+            font-weight: 600;
+            font-size: $small-font;
+    
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.06em;
+    
+            color: $secondary-white;
+        }
+
+        a:hover { text-decoration: solid underline 2px $secondary-white; }
+    }
+
+    .btn-sign-up {
+        width: 120px;
+        height: 50px;
+        padding: 10px;
+
+        border: 2px solid $secondary-white;
+        border-radius: 27px;
+
+        display: grid;
+        place-items: center;
+
+        a {
+            font-family: 'PlusJakartaSans-Regular';
+            font-style: normal;
+            font-weight: 600;
+            font-size: $small-font;
+
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.06em;
+
+            color: $primary-yellow;
+        }
+    }
+}
+
+// hero article
+.hero-article {
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    row-gap: 1rem;
+
+    .hero-article-heading,.hero-article-subheading {
+        font-family: 'PlusJakartaSans-ExtraBold';
+        font-style: normal;
+        font-size: $xxx-large-font;
+        text-align: center;
+
+        color: $secondary-white;
+    }
+
+    .hero-article-subheading {
+        font-family: 'PlusJakartaSans-ExtraBoldItalic';
+        color: $primary-yellow;
+    }
+
+    .hero-article-paragraph {
+        font-family: 'PlusJakartaSans-Regular';
+        font-style: normal;
+        font-size: $extra-small-font;
+        text-align: center;
+
+        color: $secondary-light-grey;
+    }
+
+    .btn-article {
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+
+        border-radius: 27px;
+        background-color: $primary-yellow;
+
+        display: grid;
+        place-items: center;
+
+        a {
+            font-family: 'PlusJakartaSans-Regular';
+            font-style: normal;
+            font-weight: 600;
+            font-size: $small-font;
+
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.06em;
+
+            color: $primary-black;
+        }
+    }
+}
+
+// companies
+.header-hero-background {
+    .companies {
+        align-self: end;
+        width: 100%;
+
+        display: grid;
+        row-gap: 10px;
+        position: relative;
+        z-index: 3;
+        
+        .companies-heading {
+            font-family: 'PlusJakartaSans-Regular';
+            font-style: oblique;
+            font-size: $extra-small-font;
+
+            text-align: center;
+
+            color: $secondary-dark-grey;
+        }
+
+        .companies-logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            img {
+                height: 75px;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        .companies-logo li:nth-child(3) img {
+            height: 25px;
+            aspect-ratio: 1/1;
+        }
+    }
+}

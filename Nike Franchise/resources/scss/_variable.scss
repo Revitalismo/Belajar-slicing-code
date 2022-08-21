@@ -1,0 +1,50 @@
+
+	// color
+	$primary-black: #24272B;
+	$primary-yellow: #EFFB56;
+	$secondary-white: #FFFFFF;
+	$secondary-light-grey: #C1C1C1;
+	$secondary-dark-grey: #9B9B9B;
+
+	// font family
+	$primary-font: 'Poppins', sans-serif;
+	$primary-font: 'PlusJakartaSans', sans-serif;
+
+    // font sizes
+	$extra-small-font: 14px;
+    $small-font: 16px;
+	$medium-font: 18;
+	$large-font:20px;
+	$extra-large-font: 24px;
+	$xx-large-font: 28px;
+	$xxx-large-font: 32px;
+
+	// font face
+	@font-face {
+		font-family: 'PlusJakartaSans-Regular';
+		src: url(./../PlusJakartaSans/PlusJakartaSans-Regular.woff);
+	}
+
+	@font-face {
+		font-family: 'PlusJakartaSans-Medium';
+		src: url(./../PlusJakartaSans/PlusJakartaSans-Medium.woff);
+	}
+
+	@font-face {
+		font-family: 'PlusJakartaSans-ExtraBold';
+		src: url(./../PlusJakartaSans/PlusJakartaSans-ExtraBold.woff);
+	}
+
+	@font-face {
+		font-family: 'PlusJakartaSans-ExtraBoldItalic';
+		src: url(./../PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.woff);
+	}
+
+	@font-face {
+		font-family: 'PlusJakartaSans-MediumItalic';
+		src: url(./../PlusJakartaSans/PlusJakartaSans-MediumItalic.woff);
+	}
+
+li {
+	list-style: none;
+}
